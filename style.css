@@ -1,0 +1,774 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,100&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Quicksand';
+}
+
+:root {
+    --hospitalGreen: #ACD9B2;
+    --dark: #797979;
+    --black: #232830;
+    --veryLightPink: #C7C7C7;
+    --textInputField: #F7F7F7;
+    --white: #FFFFFF;
+
+}
+
+
+h1 {
+ font-size: 1.125rem;
+ font-weight: 600;
+}
+
+h2 {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 500; 
+ }
+
+h5 {
+   font-size: 1rem;
+   font-weight: 400; 
+}
+
+h6 {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--dark);
+}
+
+/* NAV */
+
+nav {
+    box-shadow: 0px 3px 5px var(--textInputField);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 32px;
+}
+
+.iconmenu {
+    display: none;
+}
+
+.navleft ul, .navright ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.navleft {
+    display: flex;
+    gap: 40px;
+}
+
+.navleft li a {
+    font-weight: 500;
+    margin: 0px 16px;
+    padding: 6px 12px;
+    color: var(--dark);
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+}
+
+.navleft li a:hover {
+    color: var(--hospitalGreen);
+    border: 1px solid var(--hospitalGreen);
+    border-radius: 8px;
+}
+
+.navright li {
+    margin-left: 16px;
+}
+
+.navright span {
+    color: var(--dark);
+}
+
+
+/*LOGIN*/
+
+.content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.title {
+    width: 40%;
+    margin-bottom: 32px;
+    color: var(--black);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleEdit {
+    width: 40%;
+    margin-bottom: 32px;
+    color: var(--black);
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.logoEnFrame {
+    height: 40px;
+    display: none;
+    margin-bottom: 32px;
+}
+
+form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.info {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 8px 0px;
+}
+
+input {
+    width: auto;
+    padding: 12px;
+    border-radius: 8px;
+    border: unset;
+    background-color: var(--textInputField);
+}
+
+::placeholder {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.button {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--white);
+    background-color: var(--hospitalGreen);
+    border: unset;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.buttonSecondary {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--hospitalGreen);
+    background-color: var(--white);
+    border: unset;
+    padding: 16px;
+    border: 2px solid var(--hospitalGreen);
+    border-radius: 8px;
+}
+
+.buttonicon {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--white);
+    background-color: var(--hospitalGreen);
+    border: unset;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.botton {
+    position:absolute;
+    top: 80vh;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+}
+
+
+
+/* SEND EMAIL */
+.sendEmail {
+    width: 200px;
+    height: 200px;
+    background-color: var(--textInputField);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 56px 0px;
+}
+
+.help {
+    margin: 32px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 40%;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--hospitalGreen);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#resend {
+    color: var(--dark);
+}
+
+.help span {
+    color: var(--hospitalGreen);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+/*HOME*/
+
+.conteinerCard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,240px);
+    gap: 16px;
+    place-content: center;
+    margin-top: 56px;
+}
+
+.card {
+    width: 240px;
+}
+
+.card img {
+    width: 100%;
+    height: 240px;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0px;
+}
+
+.productInfo h1 {
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.productInfo p {
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+    margin-right: 4px;
+}
+
+.productInfo figure img {
+    width: 40px;
+    height: 40px;
+}
+
+/*MENU DESKTOP*/
+.search {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+    margin-top: 24px;
+    margin-left: 5%;
+}
+
+.search div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.search h3, .search h5 {
+    margin: 0;
+}
+
+.inputsearch {
+    height: 24px;
+    background-image: url(/icons/search.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0px 56px;
+    border: 8px solid var(--textInputField);
+    box-sizing:content-box;
+}
+
+.iconflecha {
+    rotate: 90deg;
+}
+
+.opcionesDesktop {
+    width: 100px;
+    box-shadow: -2px 2px 5px var(--veryLightPink);
+    border-radius: 4px;
+    padding: 24px;
+}
+
+.opcionesDesktop ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.opcionesDesktop ul li {
+    text-align: end;
+    margin-bottom: 16px;  
+}
+
+.opcionesDesktop ul li:last-child {
+    margin-bottom: 0px;  
+}
+
+.opcionesDesktop a {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.opcionesDesktop ul li:last-child a{
+    color: var(--hospitalGreen);
+    padding-top: 20px;
+    border-top: 1px solid var(--veryLightPink);
+}
+
+/*MENU MOBILE*/
+
+.opcionesMobile {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.opcionesMobile ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.opcionesMobile a {
+    display: block;
+    margin: 24px 0px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.opcionesMobile ul:last-child a {
+    color: var(--hospitalGreen);
+}
+
+.opcionesMobile ul:first-child{
+    border-bottom: 1px solid var(--veryLightPink);
+}
+
+/* SHOPPING CAR */
+
+.summary {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--textInputField);
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.summary div h3  {
+    margin: 0;
+}
+.summary div p  {
+    margin: 0;
+}
+
+.cardshopping {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.cardshopping div {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+
+.cardshopping figure img {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.cardshopping div h5 {
+    margin: 0;
+}
+
+
+/* MY ORDERS */
+
+.order {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.orderlook {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.order div h3  {
+    margin: 0;
+}
+.order div p  {
+    margin: 0;
+}
+
+
+/* PRODUCTS DETAILS */
+
+aside {
+    width: 480px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    gap: 24px;
+    box-shadow: 3px 0px 5px var(--veryLightPink);
+}
+
+.fotoproducto{
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+.fotoproducto:hover {
+    cursor: pointer;
+}
+
+.details {
+    padding: 16px;
+}
+
+.details h1 {
+    margin: 0px 0px 8px 0px;
+} 
+
+.details h5 {
+    margin: 0px 0px 16px 0px;
+    color: var(--dark);
+} 
+
+.iconclose {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.iconclose:hover {
+    cursor: pointer;
+}
+
+.bottondetails {
+    position:absolute;
+    top: 80vh;
+    width: 90%;
+}
+
+
+/* ASIDE SHOPPING CAR*/
+
+.titleshopping {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 0px 16px;
+}
+
+.cardcart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 16px;
+}
+
+.cardcart div {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+
+.cardcart figure img {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.cardcart div h5 {
+    margin: 0;
+}
+
+.total {
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--textInputField);
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.total div h3  {
+    margin: 0;
+}
+
+.bottonCheck {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+@media (max-width: 980px) {
+    .iconmenu {
+        display: block;
+    }
+    
+    .navleft {
+        display: flex;
+        gap: 40px;
+    }
+    
+    .navleft ul {
+        display: none;
+    }
+}
+
+@media (max-width:640px){
+    
+    
+    .navright span {
+        display: none;
+    }
+
+    .title {
+        width: 60%;
+    }
+
+    form {
+        width: 60%;
+    }
+
+    .help {
+        width: 60%;
+    }
+
+    .botton {
+        position:absolute;
+        top: 90vh;
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+    }
+
+    .summary {
+        width: 70%;
+        margin-bottom: 16px;
+    }
+        
+    .cardshopping {
+        width: 80%;
+        margin-bottom: 8px;
+    }
+
+    .order {
+        width: 80%;
+        margin-bottom: 16px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .search {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        margin-top: 24px;
+        margin-left: unset;
+    }
+
+    .title {
+        width: 80%;
+    }
+
+    .logoEnFrame {
+        display: block;
+    }
+
+    form {
+        width: 80%;
+    }
+
+
+    .help {
+        width: 80%;
+    }
+
+    .botton {
+        position:absolute;
+        top: 90vh;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+
+    .conteinerCard {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 160px);
+        gap: 16px;
+        place-content: center;
+        margin-top: 56px;
+    }
+    
+    .card {
+        width: 160px;
+    }
+    
+    .card img {
+        width: 100%;
+        height: 160px;
+        border-radius: 16px 16px 0px 0px;
+        object-fit: cover;
+    }
+
+    .productInfo figure img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .productInfo {
+        margin: 4px 0px;
+    }
+    
+    .productInfo h1 {
+        margin: 0;
+        margin-bottom: 0px;
+    }
+
+    .summary {
+        width: 85%;
+        margin-bottom: 16px;
+    }
+        
+    .cardshopping {
+        width: 90%;
+        margin-bottom: 8px;
+    }
+
+    #titledisplay {
+        display: none;
+    }
+
+    .order {
+        width: 90%;
+        margin-bottom: 16px;
+    }
+
+    aside {
+        width: 100%;
+        height: 100vh;
+        position: unset;
+        gap: 16px;
+        box-shadow: unset;
+    }
+
+    .fotoproducto{
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+    }
+
+}
