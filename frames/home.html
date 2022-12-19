@@ -25,11 +25,91 @@
 
         <div class="navright">
             <ul>
-                <li><span>Camilayokoo@gmail.com</span></li>
-                <li><img src="/icons/icon_shopping_cart_notification.svg" alt="">
+                <li id="navEmail"><span>Camilayokoo@gmail.com</span></li>
+                <li><img src="/icons/icon_shopping_cart_notification.svg" alt="carrito de compras" class="shoppingIcon">
+            </ul>
+        </div>
+
+        <div class="opcionesDesktop inactive">
+            <ul>
+                <li><a href="#">My orders</a></li>
+                <li><a href="#">My account</a></li>
+                <li><a href="#">Sign out</a></li>
+            </ul>
+        </div>
+
+        <div class="opcionesMobile inactive">
+            <ul>
+                <li><a href="#">CATEGORIES</a></li>
+                <li><a href="#">All</a></li>
+                <li><a href="#">Clothes</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Furnitures</a></li>
+                <li><a href="#">Toys</a></li>
+                <li><a href="#">Other</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">My orders</a></li>
+                <li><a href="#">My account</a></li>
+            </ul>
+            <ul>
+                <li><a id="resend" href="#">Camilayokoo@gmail.com</a></li>
+                <li><a href="#">Sign out</a></li>
             </ul>
         </div>
     </nav>
+
+    <aside class="shoppingCart inactive">
+        <div class="titleshopping" >
+            <img src="/icons/flecha.svg" alt="" width="24px">
+            <h1>Shopping cart</h1>
+        </div>  
+
+        <div class="cardcart">
+            <div>
+            <figure><img src="/products/plant1.jpg" alt=""></figure>
+            <h5>Plant</h5>
+            </div>
+            <div>
+            <h1>$120,00</h1>
+            <img src="/icons/icon_close.png" alt="" width="16px">
+            </div>
+        </div>
+
+        <div class="cardcart">
+            <div>
+            <figure><img src="/products/plant1.jpg" alt=""></figure>
+            <h5>Plant</h5>
+            </div>
+            <div>
+            <h1>$120,00</h1>
+            <img src="/icons/icon_close.png" alt="" width="16px">
+            </div>
+        </div>
+
+        <div class="cardcart">
+            <div>
+            <figure><img src="/products/plant1.jpg" alt=""></figure>
+            <h5>Plant</h5>
+            </div>
+            <div>
+            <h1>$120,00</h1>
+            <img src="/icons/icon_close.png" alt="" width="16px">
+            </div>
+        </div>
+
+
+        <div class="total">
+            <div>
+                <h3>Total</h3>
+            </div>
+            <h1>$560.00</h1>
+        </div>
+        <div class="bottonCheck">
+        <button class="button">Check out</button>
+        </div>
+
+    </aside>
 
     <section class="search">
         <input type="search" placeholder="Seach products" class="inputsearch">
@@ -281,5 +361,7 @@
             
         </div>
     </section>
+
+    <script src="../script.js"></script>
 </body>
 </html>
