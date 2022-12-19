@@ -352,10 +352,22 @@ figure {
 }
 
 .opcionesDesktop {
+    position: absolute;
+    top: 48px;
+    right: 72px;
+    background-color: var(--white);
     width: 100px;
     box-shadow: -2px 2px 5px var(--veryLightPink);
     border-radius: 4px;
     padding: 24px;
+}
+
+#navEmail {
+    cursor: pointer;
+}
+
+.inactive {
+    display: none;
 }
 
 .opcionesDesktop ul {
@@ -366,7 +378,7 @@ figure {
 
 .opcionesDesktop ul li {
     text-align: end;
-    margin-bottom: 16px;  
+    margin-bottom: 16px; 
 }
 
 .opcionesDesktop ul li:last-child {
@@ -389,6 +401,9 @@ figure {
 /*MENU MOBILE*/
 
 .opcionesMobile {
+    position: absolute;
+    top: 48px;
+    left: 0;
     padding: 24px;
     display: flex;
     flex-direction: column;
